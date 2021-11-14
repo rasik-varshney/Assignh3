@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #B2BABB;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    background-color:grey;
+}
+
+.line{
+    background-color: rgb(54, 21, 243);
+    height: 3px;
+}
+
+.logo{
+    width: 15vh;
+    height: 13vh;
+    margin: 1.2vh;
+    border-radius: 45%;
+    cursor: pointer;
+}
+.heading{
+    margin-left: 40%;
+    margin-top: -11vh;
+    cursor: pointer;
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5em;
+    height: auto;
+    flex-wrap: wrap;
+}
+.container div{
+    flex-basis: 40%;
+    min-width: 200px;
+    background-color:burlywood;
+    color: white;
+}
+
+.left-container, .right-container{
+    border-radius: 1.4rem;
+    margin: 2vh;
+    padding-bottom: 2vh;
+}
+
+.left-container h2, .right-container h2{
+    text-align: center;
+    margin: 2rem;
+    font-family: sans-serif;
+}
+.left-container a, .right-container a{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.left-container a:hover, .right-container a:hover{
+    color: yellow;
+    font-size: 1.45rem;
+}
+.left-table img, .right-table img{
+    width: 10vh;
+    height: 10vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    border-radius: 50%;
+}
+.engines{
+    font-size: 2rem;
+    margin-left: 11vw;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 845px) {
+    .container{
+        justify-content: center;
+    }
+    .container div{
+        flex-basis: 80%;
+    }
+
+    .heading{
+        font-size: 1.2rem;
+    }
+
+    .left-container h2, .right-container h2{
+        font-size: 18px;
+    }
+    .left-table img, .right-table img{
+        margin-left: 13vw;
+    }
+
+    .left-container a, .right-container a{
+        font-size: 16px;
+    }
+    .engines{
+        font-size: 2rem;
+        margin-left: 12vw;
+        text-decoration: none;
+    }
+}
